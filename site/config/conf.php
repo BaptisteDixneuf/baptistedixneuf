@@ -10,10 +10,10 @@ class Conf {
     /* Identifant de connexion */
     static $databases = array(
         'default' => array(
-            'host' => 'localhost',
+            'host' => getenv('DB_PORT_3306_TCP_ADDR'),
             'database' => 'baptistedixneuf',
-            'login' => 'localdev',
-            'password' => 'local'
+            'login' => 'root',
+            'password' => getenv('DB_1_ENV_MYSQL_ROOT_PASSWORD')
         )
     );
 
