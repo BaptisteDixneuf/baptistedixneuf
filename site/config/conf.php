@@ -7,13 +7,15 @@ class Conf {
 
     static $debug = 2;
 
+    
+
     /* Identifant de connexion */
     static $databases = array(
         'default' => array(
-            'host' => getenv('DB_PORT_3306_TCP_ADDR'),
+            'host' => DSN,
             'database' => 'baptistedixneuf',
             'login' => 'root',
-            'password' => getenv('DB_1_ENV_MYSQL_ROOT_PASSWORD')
+            'password' => MDP
         )
     );
 
