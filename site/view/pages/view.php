@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="http://rawgit.com/Grafikart/JS-Markdown-Editor/master/dist/mdeditor.css">
+<link rel="stylesheet" href="//rawgit.com/Grafikart/JS-Markdown-Editor/master/dist/mdeditor.css">
 
 <?php
 $title_for_layout = $page->name;

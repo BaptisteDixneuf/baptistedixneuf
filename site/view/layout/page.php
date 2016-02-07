@@ -7,7 +7,7 @@
         <title><?php echo isset($title_for_layout) ? $title_for_layout : 'Dixneuf Baptiste'; ?></title>
 
         <!-- style -->
-        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href='<?php echo BASE_URL . '/css/design.css' ?>'>
         <link rel="icon" type="image/png" href="<?php echo BASE_URL . '/img/favicon.ico' ?>" />
 

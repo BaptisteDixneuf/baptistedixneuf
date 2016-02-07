@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>Veille</title>
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0" />
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="<?php echo BASE_URL . '/css/materialdesign.css' ?>" />
         <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL . '/css/veille.css' ?>">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -80,7 +80,7 @@
 			<!-- menu -->
 			<script type="text/javascript">                        
                 $(function() {
-                $.getJSON('http://baptistedixneuf.fr/site/apis/topcategories', function(donnees) {
+                $.getJSON('//baptistedixneuf.fr/site/apis/topcategories', function(donnees) {
                     for (var i in donnees) {
 					$(".menu").append("<a href='#' onclick='javascript:categories("+donnees[i].id+");return false';>"+donnees[i].name_category+"</a>");
 					}                                    
@@ -97,7 +97,7 @@
                     $(function() {
                         $('body').removeClass('with--sidebar');
                         $( "#links" ).empty();
-                        $.getJSON('http://baptistedixneuf.fr/apis/viewall', function(donnees) {
+                        $.getJSON('//baptistedixneuf.fr/site/apis/viewall', function(donnees) {
                         console.log(donnees);
                          $( "#titre" ).replaceWith( "<a href='#' class='header__logo' id='titre'>Outils de Veille</a>" );
                         $("#links").append("<h3> Les 10 derniers liens</h3>");
@@ -127,7 +127,7 @@
                         $( "#liens" ).empty();
 						$( "#autres" ).empty();
 
-                		$.getJSON('http://baptistedixneuf.fr/apis/viewcategorie/'+id, function(donnees) {
+                		$.getJSON('//baptistedixneuf.fr/site/apis/viewcategorie/'+id, function(donnees) {
                     		console.log(donnees);
 
                             $( "#titre" ).replaceWith( "<a href='#' class='header__logo' id='titre'>"+ donnees[0].name_category +"</a>" );
@@ -141,7 +141,7 @@
 
                         });
 
-                        $.getJSON('http://baptistedixneuf.fr/apis/sourcecategorie/'+id, function(sources) {
+                        $.getJSON('//baptistedixneuf.fr/site/apis/sourcecategorie/'+id, function(sources) {
                             console.log(sources);
                             for (var i in sources) {
                                 if(sources[i].type=="rss"){
@@ -173,7 +173,7 @@
 					$(function() {
 						$('body').removeClass('with--sidebar');
 						$( "#links" ).empty();
-                		$.getJSON('http://baptistedixneuf.fr/apis/viewlink/'+id, function(donnees) {
+                		$.getJSON('//baptistedixneuf.fr/site/apis/viewlink/'+id, function(donnees) {
                 		console.log(donnees);                   
 						$("#links").append("<div class='dialog'><div class='content'>"+donnees.content+"<h3>"+donnees.link+"</h3><p>"+donnees.description+"</p><div class='button label-blue'><div class='center' fit><a href='"+donnees.link+"' >VOIR LE SITE &rarr;</a></div><paper-ripple fit></paper-ripple></div></div><div id='disqus_thread'></div>");
 						initDisqus(id);
@@ -203,7 +203,7 @@
 					                reload: true,
 					                config: function () {
 					                    this.page.identifier = id;
-					                    this.page.url = "http://baptistedixneuf.fr/veille/"+id;
+					                    this.page.url = "//baptistedixneuf.fr/site/veille/"+id;
 					                }
 					            });
 					        });
