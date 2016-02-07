@@ -9,7 +9,8 @@ class Request {
 
     function __construct() {
 
-        $this->url = isset($_SERVER['ORIG_PATH_INFO']) ? $_SERVER['ORIG_PATH_INFO'] : '/';
+        $this->url = isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : '/';
+       
        
         if (isset($_GET['page'])) {
             if (is_numeric($_GET['page'])) {
