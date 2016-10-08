@@ -7,7 +7,7 @@
         <title><?php echo isset($title_for_layout) ? $title_for_layout : 'Dixneuf Baptiste'; ?></title>
 
         <!-- style -->
-        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href='<?php echo BASE_URL . '/css/design.css' ?>'>
         <link rel="icon" type="image/png" href="<?php echo BASE_URL . '/img/favicon.ico' ?>" />
 
@@ -36,7 +36,6 @@
                                     <?php echo $p->name; ?>
                             </a>
                         <?php endforeach; ?> 
-                        <a href="<?php echo Router::url('links/index'); ?>">Veille Technologique</a>
                         
                     </nav>
                 </header>
@@ -46,7 +45,6 @@
                         <div class="jumbotron">
                             <div class="container">
                                 <h1>DIXNEUF Baptiste</h1>
-                                <p>Etudiant en BTS SIO, développeur HTML/CSS3 & PHP/MYSQL & JAVA</p>
                                 <p><a class="btn btn-primary btn-lg"  href="<?php echo Router::url('pages/cv-dixneuf-baptiste-1'); ?>" target="_blank" role="button">En savoir plus &raquo;</a></p>
                             </div>
                         </div>
@@ -57,12 +55,6 @@
                             </div>
 
                             <div class="col-md-4">
-                                <div class="cards-title">
-                                    <h3 style="margin-top: 20px;">Présentation</h3>
-                                </div>
-                                <div class="cards">
-                                    <p>Ce blog est dédié à mes deux années de BTS SIO (Services Informatiques aux Organisations) au Lycée Saint-Pierre La Joliverie à Saint-Sébastien.<p>
-                                </div>
                                 <div class="cards-title">
                                     <h3>Me suivre </h3>
                                 </div>

@@ -10,9 +10,9 @@
   <title>Markdown Editor</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="http://rawgit.com/Grafikart/JS-Markdown-Editor/master/dist/mdeditor.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://rawgit.com/Grafikart/JS-Markdown-Editor/master/dist/mdeditor.css">
   <!-- Custom styles for this template -->
   <style>
     .starter-template{
