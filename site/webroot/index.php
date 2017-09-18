@@ -9,7 +9,7 @@ define('WEBROOT', dirname(__FILE__));
 define('ROOT', dirname(WEBROOT));
 define('DS', DIRECTORY_SEPARATOR);
 define('CORE', ROOT . DS . 'core');
-define('BASE_URL', "//baptistedixneuf.fr/site");
+define('BASE_URL', "http://baptistedixneuf.fr/site");
 define('HOST', $_SERVER['HTTP_HOST']);
 
 define('DSN',getenv('DB_PORT_3306_TCP_ADDR'));
