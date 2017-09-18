@@ -27,6 +27,7 @@
                     <a href="#" class="header__icon" id="header__icon"></a>
                     <a href="<?php echo Router::url(''); ?>" class="header__logo">Dixneuf Baptiste</a>
                     <nav class="menu">
+						<a href="https://www.linkedin.com/in/baptistedixneuf/">CV</a>
                         <a href="<?php echo Router::url('posts/index'); ?>">Blog Perso</a>
                         <?php $pagesMemu = $this->request('Pages', 'getMenu'); ?>
                         <?php foreach ($pagesMemu as $p): ?>
@@ -45,7 +46,7 @@
                         <div class="jumbotron">
                             <div class="container">
                                 <h1>DIXNEUF Baptiste</h1>
-                                <p><a class="btn btn-primary btn-lg"  href="<?php echo Router::url('pages/cv-dixneuf-baptiste-1'); ?>" target="_blank" role="button">En savoir plus &raquo;</a></p>
+                                <p><a class="btn btn-primary btn-lg"  href="https://www.linkedin.com/in/baptistedixneuf/" target="_blank" role="button">En savoir plus &raquo;</a></p>
                             </div>
                         </div>
                         <div class="container">
