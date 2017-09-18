@@ -18,8 +18,8 @@
 </form>
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="http://rawgit.com/Grafikart/JS-Markdown-Editor/master/dist/mdeditor.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://rawgit.com/Grafikart/JS-Markdown-Editor/master/dist/mdeditor.min.js"></script>
 
 <script>
   var md = new MdEditor('.mdeditor', {

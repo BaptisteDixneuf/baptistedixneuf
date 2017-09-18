@@ -24,7 +24,7 @@
     </div>
 </form>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>        
 <script type="text/javascript" src="<?php echo Router::webroot('js/Trumbowyg/trumbowyg/trumbowyg.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo Router::webroot('js/Trumbowyg/trumbowyg/plugins/upload/trumbowyg.upload.js'); ?>"></script>
